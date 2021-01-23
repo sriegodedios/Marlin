@@ -1169,7 +1169,8 @@
 #define ADVANCED_PAUSE_FEATURE
 
 
-#define FIL_RUNOUT_PIN 32
+// We will have the filament runout sensor on pin PI11
+#define FIL_RUNOUT_PIN PH6
 #define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
@@ -1505,7 +1506,7 @@
 
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 205
+#define PREHEAT_1_TEMP_HOTEND 200
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
